@@ -1,0 +1,692 @@
+2018-09-03 09:41:19.280  INFO 15020 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22d7b4f8: startup date [Mon Sep 03 09:41:19 CST 2018]; root of context hierarchy
+2018-09-03 09:41:20.862  INFO 15020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 09:41:20.885  INFO 15020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 09:41:20.886  INFO 15020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 09:41:20.890  INFO 15020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 09:41:20.983  INFO 15020 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 09:41:20.983  INFO 15020 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1703 ms
+2018-09-03 09:41:21.072  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 09:41:21.073  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 09:41:21.078  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 09:41:21.078  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 09:41:21.079  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 09:41:21.079  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 09:41:21.079  INFO 15020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 09:41:21.155  INFO 15020 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 09:41:21.271 ERROR 15020 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 09:41:21.600  INFO 15020 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 09:41:22.131  INFO 15020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 09:41:22.345  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22d7b4f8: startup date [Mon Sep 03 09:41:19 CST 2018]; root of context hierarchy
+2018-09-03 09:41:22.433  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 09:41:22.434  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 09:41:22.435  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 09:41:22.436  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 09:41:22.436  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 09:41:22.437  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 09:41:22.438  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 09:41:22.438  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 09:41:22.441  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 09:41:22.441  INFO 15020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 09:41:22.476  INFO 15020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 09:41:22.476  INFO 15020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 09:41:22.497  INFO 15020 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 09:41:22.786  INFO 15020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 09:41:22.787  INFO 15020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 09:41:22.787  INFO 15020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 09:41:22.793  INFO 15020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 09:41:22.793  INFO 15020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 09:41:22.839  INFO 15020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 09:41:59.526  INFO 15020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 09:41:59.527  INFO 15020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 09:41:59.549  INFO 15020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-09-03 10:08:22.069  INFO 15020 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22d7b4f8: startup date [Mon Sep 03 09:41:19 CST 2018]; root of context hierarchy
+2018-09-03 10:08:22.096  INFO 15020 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:08:22.098  INFO 15020 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:08:22.145  INFO 15020 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:08:27.864  INFO 16547 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3c5255: startup date [Mon Sep 03 10:08:27 CST 2018]; root of context hierarchy
+2018-09-03 10:08:29.785  INFO 16547 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:08:29.822  INFO 16547 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:08:29.823  INFO 16547 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:08:29.829  INFO 16547 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:08:29.952  INFO 16547 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:08:29.952  INFO 16547 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2088 ms
+2018-09-03 10:08:30.100  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:08:30.102  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:08:30.106  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:08:30.107  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:08:30.107  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:08:30.107  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:08:30.108  INFO 16547 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:08:30.254  INFO 16547 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:08:30.670 ERROR 16547 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:08:31.080  INFO 16547 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:08:31.806  INFO 16547 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:08:32.008  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3c5255: startup date [Mon Sep 03 10:08:27 CST 2018]; root of context hierarchy
+2018-09-03 10:08:32.083  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:08:32.085  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:08:32.086  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:08:32.086  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:08:32.087  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:08:32.087  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:08:32.088  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:08:32.088  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:08:32.091  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:08:32.092  INFO 16547 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:08:32.130  INFO 16547 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:08:32.130  INFO 16547 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:08:32.148  INFO 16547 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:08:32.502  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:08:32.505  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:08:32.505  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:08:32.505  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:08:32.505  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:08:32.506  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:08:32.514  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:08:32.518  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:08:32.521  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:08:32.524  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:08:32.527  INFO 16547 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:08:32.602  INFO 16547 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:08:41.144  INFO 16547 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:08:41.145  INFO 16547 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:08:41.165  INFO 16547 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-09-03 10:10:33.814  INFO 16547 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d3c5255: startup date [Mon Sep 03 10:08:27 CST 2018]; root of context hierarchy
+2018-09-03 10:10:33.817  INFO 16547 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:10:33.818  INFO 16547 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:10:33.831  INFO 16547 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:10:38.889  INFO 16674 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40db2a24: startup date [Mon Sep 03 10:10:38 CST 2018]; root of context hierarchy
+2018-09-03 10:10:40.810  INFO 16674 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:10:40.834  INFO 16674 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:10:40.834  INFO 16674 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:10:40.838  INFO 16674 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:10:40.904  INFO 16674 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:10:40.904  INFO 16674 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2015 ms
+2018-09-03 10:10:40.993  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:10:40.994  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:10:40.999  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:10:40.999  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:10:41.000  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:10:41.000  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:10:41.000  INFO 16674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:10:41.117  INFO 16674 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:10:41.453 ERROR 16674 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:10:41.887  INFO 16674 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:10:42.543  INFO 16674 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:10:42.799  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40db2a24: startup date [Mon Sep 03 10:10:38 CST 2018]; root of context hierarchy
+2018-09-03 10:10:42.871  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:10:42.872  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:10:42.873  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:10:42.874  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:10:42.875  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:10:42.875  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:10:42.876  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:10:42.877  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:10:42.881  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:10:42.882  INFO 16674 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:10:42.922  INFO 16674 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:10:42.923  INFO 16674 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:10:42.942  INFO 16674 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:10:43.326  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:10:43.328  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:10:43.328  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:10:43.328  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:10:43.328  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:10:43.329  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:10:43.335  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:10:43.336  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:10:43.337  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:10:43.338  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:10:43.339  INFO 16674 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:10:43.391  INFO 16674 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:10:52.848  INFO 16674 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:10:52.848  INFO 16674 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:10:52.869  INFO 16674 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-09-03 10:20:55.774  INFO 16674 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40db2a24: startup date [Mon Sep 03 10:10:38 CST 2018]; root of context hierarchy
+2018-09-03 10:20:55.777  INFO 16674 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:20:55.779  INFO 16674 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:20:55.785  INFO 16674 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:21:01.695  INFO 17223 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d41f816: startup date [Mon Sep 03 10:21:01 CST 2018]; root of context hierarchy
+2018-09-03 10:21:04.545  INFO 17223 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:21:04.592  INFO 17223 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:21:04.593  INFO 17223 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:21:04.600  INFO 17223 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:21:04.718  INFO 17223 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:21:04.719  INFO 17223 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3024 ms
+2018-09-03 10:21:04.846  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:21:04.849  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:21:04.852  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:21:04.853  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:21:04.853  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:21:04.853  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:21:04.854  INFO 17223 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:21:04.938  INFO 17223 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:21:05.292 ERROR 17223 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:21:05.643  INFO 17223 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:21:05.781  WARN 17223 --- [main] c.b.mybatisplus.toolkit.TableInfoHelper  : Warn: Could not find @TableId in Class: com.invitation.card.entity.InvitationCardInfo.
+2018-09-03 10:21:05.781  WARN 17223 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.invitation.card.entity.InvitationCardInfo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2018-09-03 10:21:06.314  INFO 17223 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:21:06.552  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d41f816: startup date [Mon Sep 03 10:21:01 CST 2018]; root of context hierarchy
+2018-09-03 10:21:06.636  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:21:06.638  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:21:06.639  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:21:06.640  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:21:06.641  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:21:06.643  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:21:06.666  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:21:06.667  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:21:06.676  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:21:06.678  INFO 17223 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:21:06.742  INFO 17223 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:21:06.743  INFO 17223 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:21:06.797  INFO 17223 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:21:07.122  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:21:07.124  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:21:07.125  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:21:07.125  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:21:07.125  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:21:07.126  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:21:07.131  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:21:07.132  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:21:07.133  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:21:07.134  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:21:07.135  INFO 17223 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:21:07.182  INFO 17223 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:21:13.579  INFO 17223 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:21:13.580  INFO 17223 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:21:13.600  INFO 17223 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-09-03 10:21:13.897 ERROR 17223 --- [http-nio-8080-exec-1] druid.sql.Statement                      : {conn-10001, pstmt-20000} execute error. SELECT  invitationCardInfoId,manName,womanName,weddingDate,lunarCalendar,hotelName,address,shareName,thumbContent,thumbUrl,manTel,womanTel,longitude,latitude,createTime,updateTime,appId  FROM invitationCardInfo 
+ 
+ 
+ 
+WHERE (app_id = ?)
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'invitation_card.invitationcardinfo' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.selectList(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy77.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.service.impl.ServiceImpl.selectOne(ServiceImpl.java:276)
+	at com.baomidou.mybatisplus.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$3e2398a4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.invitation.card.service.impl.InvitationCardInfoServiceImpl$$EnhancerBySpringCGLIB$$2b5612a4.selectOne(<generated>)
+	at com.invitation.card.controller.InvitationCardInfoController.query(InvitationCardInfoController.java:53)
+	at com.invitation.card.controller.InvitationCardInfoController$$FastClassBySpringCGLIB$$3947c4af.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.invitation.card.controller.InvitationCardInfoController$$EnhancerBySpringCGLIB$$c8174365.query(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-09-03 10:21:13.908  INFO 17223 --- [http-nio-8080-exec-1] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-03 10:22:20.468  INFO 17223 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d41f816: startup date [Mon Sep 03 10:21:01 CST 2018]; root of context hierarchy
+2018-09-03 10:22:20.471  INFO 17223 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:22:20.472  INFO 17223 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:22:20.480  INFO 17223 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:22:25.282  INFO 17316 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a55af6b: startup date [Mon Sep 03 10:22:25 CST 2018]; root of context hierarchy
+2018-09-03 10:22:27.031  INFO 17316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:22:27.056  INFO 17316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:22:27.056  INFO 17316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:22:27.060  INFO 17316 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:22:27.157  INFO 17316 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:22:27.157  INFO 17316 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1876 ms
+2018-09-03 10:22:27.255  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:22:27.258  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:22:27.262  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:22:27.263  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:22:27.263  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:22:27.263  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:22:27.264  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:22:27.349  INFO 17316 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:22:27.603 ERROR 17316 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:22:27.948  INFO 17316 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:22:28.600  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:22:28.922  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a55af6b: startup date [Mon Sep 03 10:22:25 CST 2018]; root of context hierarchy
+2018-09-03 10:22:28.998  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:22:28.999  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:22:29.000  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:22:29.003  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:22:29.004  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:22:29.005  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:22:29.006  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:22:29.007  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:22:29.010  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:22:29.010  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:22:29.049  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:22:29.049  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:22:29.087  INFO 17316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:22:29.343  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:22:29.344  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:22:29.345  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:22:29.345  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:22:29.345  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:22:29.345  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:22:29.350  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:22:29.351  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:22:29.352  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:22:29.353  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:22:29.354  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:22:29.400  INFO 17316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:22:36.964  INFO 17316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:22:36.965  INFO 17316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:22:36.989  INFO 17316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-09-03 10:22:37.275 ERROR 17316 --- [http-nio-8080-exec-1] druid.sql.Statement                      : {conn-10001, pstmt-20000} execute error. SELECT  invitation_card_info_id AS invitationCardInfoId,manName,womanName,weddingDate,lunarCalendar,hotelName,address,shareName,thumbContent,thumbUrl,manTel,womanTel,longitude,latitude,createTime,updateTime,appId  FROM invitation_card_info 
+ 
+ 
+ 
+WHERE (app_id = ?)
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'manName' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy76.selectList(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.service.impl.ServiceImpl.selectOne(ServiceImpl.java:276)
+	at com.baomidou.mybatisplus.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$3e2398a4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.invitation.card.service.impl.InvitationCardInfoServiceImpl$$EnhancerBySpringCGLIB$$d9153563.selectOne(<generated>)
+	at com.invitation.card.controller.InvitationCardInfoController.query(InvitationCardInfoController.java:53)
+	at com.invitation.card.controller.InvitationCardInfoController$$FastClassBySpringCGLIB$$3947c4af.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.invitation.card.controller.InvitationCardInfoController$$EnhancerBySpringCGLIB$$600534c9.query(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-09-03 10:22:37.284  INFO 17316 --- [http-nio-8080-exec-1] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-03 10:25:19.313  INFO 17316 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a55af6b: startup date [Mon Sep 03 10:22:25 CST 2018]; root of context hierarchy
+2018-09-03 10:25:19.316  INFO 17316 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:25:19.317  INFO 17316 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:25:19.327  INFO 17316 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:25:24.931  INFO 17519 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ff4357f: startup date [Mon Sep 03 10:25:24 CST 2018]; root of context hierarchy
+2018-09-03 10:25:27.335  INFO 17519 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:25:27.360  INFO 17519 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:25:27.360  INFO 17519 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:25:27.365  INFO 17519 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:25:27.505  INFO 17519 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:25:27.506  INFO 17519 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2575 ms
+2018-09-03 10:25:27.653  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:25:27.655  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:25:27.661  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:25:27.662  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:25:27.662  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:25:27.662  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:25:27.662  INFO 17519 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:25:27.765  INFO 17519 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:25:28.115 ERROR 17519 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:25:28.449  INFO 17519 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:25:29.279  INFO 17519 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:25:29.515  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ff4357f: startup date [Mon Sep 03 10:25:24 CST 2018]; root of context hierarchy
+2018-09-03 10:25:29.584  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:25:29.586  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:25:29.587  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:25:29.588  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:25:29.589  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:25:29.589  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:25:29.590  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:25:29.591  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:25:29.594  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:25:29.594  INFO 17519 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:25:29.634  INFO 17519 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:25:29.635  INFO 17519 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:25:29.657  INFO 17519 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:25:29.954  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:25:29.956  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:25:29.956  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:25:29.956  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:25:29.956  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:25:29.956  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:25:29.961  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:25:29.962  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:25:29.963  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:25:29.964  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:25:29.965  INFO 17519 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:25:30.012  INFO 17519 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:25:33.863  INFO 17519 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:25:33.864  INFO 17519 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:25:33.892  INFO 17519 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-09-03 10:27:31.415  INFO 17519 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ff4357f: startup date [Mon Sep 03 10:25:24 CST 2018]; root of context hierarchy
+2018-09-03 10:27:31.422  INFO 17519 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:27:31.422  INFO 17519 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:27:31.431  INFO 17519 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:27:35.166  INFO 17645 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ed3f258: startup date [Mon Sep 03 10:27:35 CST 2018]; root of context hierarchy
+2018-09-03 10:27:36.750  INFO 17645 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:27:36.777  INFO 17645 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:27:36.778  INFO 17645 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:27:36.800  INFO 17645 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:27:36.871  INFO 17645 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:27:36.872  INFO 17645 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1706 ms
+2018-09-03 10:27:36.960  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:27:36.961  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:27:36.965  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:27:36.966  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:27:36.967  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:27:36.968  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:27:36.968  INFO 17645 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:27:37.058  INFO 17645 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:27:37.301 ERROR 17645 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:27:37.670  INFO 17645 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:27:38.208  INFO 17645 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:27:38.433  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ed3f258: startup date [Mon Sep 03 10:27:35 CST 2018]; root of context hierarchy
+2018-09-03 10:27:38.505  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:27:38.506  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:27:38.507  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:27:38.508  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:27:38.509  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:27:38.510  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:27:38.511  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:27:38.512  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:27:38.514  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:27:38.515  INFO 17645 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:27:38.549  INFO 17645 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:27:38.550  INFO 17645 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:27:38.567  INFO 17645 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:27:38.845  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:27:38.847  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:27:38.847  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:27:38.847  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:27:38.847  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:27:38.847  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:27:38.853  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:27:38.854  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:27:38.855  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:27:38.857  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:27:38.858  INFO 17645 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:27:38.913  INFO 17645 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 10:27:43.467  INFO 17645 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:27:43.467  INFO 17645 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:27:43.492  INFO 17645 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-09-03 10:43:48.704  INFO 17645 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ed3f258: startup date [Mon Sep 03 10:27:35 CST 2018]; root of context hierarchy
+2018-09-03 10:43:48.731  INFO 17645 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 10:43:48.733  INFO 17645 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 10:43:48.750  INFO 17645 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:44:55.349  INFO 18623 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4566f1: startup date [Mon Sep 03 10:44:55 CST 2018]; root of context hierarchy
+2018-09-03 10:44:56.922  INFO 18623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-03 10:44:56.947  INFO 18623 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:44:56.947  INFO 18623 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:44:56.951  INFO 18623 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangwuqian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-03 10:44:57.045  INFO 18623 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:44:57.045  INFO 18623 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1696 ms
+2018-09-03 10:44:57.135  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-03 10:44:57.138  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-09-03 10:44:57.142  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:44:57.143  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:44:57.143  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:44:57.143  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:44:57.144  INFO 18623 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-03 10:44:57.234  INFO 18623 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-09-03 10:44:57.468 ERROR 18623 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback
+2018-09-03 10:44:57.762  INFO 18623 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:44:58.259  INFO 18623 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:44:58.473  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4566f1: startup date [Mon Sep 03 10:44:55 CST 2018]; root of context hierarchy
+2018-09-03 10:44:58.538  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blessing_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.BlessingInfoController.query(java.lang.String)
+2018-09-03 10:44:58.540  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_album/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationAlbumController.query(java.lang.String)
+2018-09-03 10:44:58.541  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.query(java.lang.String)
+2018-09-03 10:44:58.541  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_card_info/save_all],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.InvitationCardInfoController.saveAll(java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-03 10:44:58.542  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invitation_music/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.String, java.lang.Object>> com.invitation.card.controller.InvitationMusicController.query(java.lang.String)
+2018-09-03 10:44:58.542  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaving_message/query],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.Map<java.lang.Object, java.lang.Object>> com.invitation.card.controller.LeavingMessageController.query(java.lang.String)
+2018-09-03 10:44:58.543  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/register],methods=[POST]}" onto public com.invitation.card.utils.ResultBean com.invitation.card.controller.StudentController.Register(com.invitation.card.entity.Student)
+2018-09-03 10:44:58.543  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/findAllStudent],methods=[POST]}" onto public com.invitation.card.utils.ResultBean<java.util.List<com.invitation.card.entity.Student>> com.invitation.card.controller.StudentController.test1()
+2018-09-03 10:44:58.546  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:44:58.547  INFO 18623 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:44:58.584  INFO 18623 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:44:58.585  INFO 18623 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:44:58.602  INFO 18623 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-09-03 10:44:58.886  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:44:58.887  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-03 10:44:58.887  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'slf4jLogFilter' has been autodetected for JMX exposure
+2018-09-03 10:44:58.887  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallConfig' has been autodetected for JMX exposure
+2018-09-03 10:44:58.888  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'wallFilter' has been autodetected for JMX exposure
+2018-09-03 10:44:58.888  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:44:58.892  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'slf4jLogFilter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=slf4jLogFilter,type=Slf4jLogFilter]
+2018-09-03 10:44:58.893  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallConfig': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallConfig,type=WallConfig]
+2018-09-03 10:44:58.894  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'wallFilter': registering with JMX server as MBean [com.alibaba.druid.wall:name=wallFilter,type=WallFilter]
+2018-09-03 10:44:58.895  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-03 10:44:58.896  INFO 18623 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-03 10:44:58.940  INFO 18623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-03 14:23:57.950  INFO 18623 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 14:23:57.954  INFO 18623 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 14:23:58.023  INFO 18623 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 68 ms
+2018-09-03 14:58:18.704  INFO 18623 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4566f1: startup date [Mon Sep 03 10:44:55 CST 2018]; root of context hierarchy
+2018-09-03 14:58:18.792  INFO 18623 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 14:58:18.805  INFO 18623 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 14:58:18.895  INFO 18623 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

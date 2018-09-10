@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.invitation.card.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.invitation.card.entity.Student">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="subject" property="subject"/>
+        <result column="score" property="score"/>
+    </resultMap>
+
+    <select id="findAllStudent" resultMap="BaseResultMap">
+        SELECT * FROM student
+    </select>
+</mapper>

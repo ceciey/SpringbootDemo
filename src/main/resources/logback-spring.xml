@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <contextName>card</contextName>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <!--application.yml 传递参数，不能使用logback 自带的<property>标签 -->
+    <springProperty scope="context" name="appName" source="logging.file"/>
+    <springProperty scope="context" name="path" source="logging.path"/>
+
+
+    <!--输出到控制台 ConsoleAppender-->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <!--展示格式 layout-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- 日志输出到文件 -->
+    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则
+               如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天
+               的日志改名为今天的日期。即，<File> 的日志都是当天的。
+        -->
+        <File>${path}/info.${appName}.log</File>
+
+        <!--滚动策略，按照时间滚动 TimeBasedRollingPolicy-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间-->
+            <!--日志文件输出的文件地址和名称-->
+            <FileNamePattern>${path}/%d{yyyy-MM-dd}.log.%i.gz</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+            <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
+            <!--<totalSizeCap>1GB</totalSizeCap>-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!--文件达到 最大128MB时会被压缩和切割 -->
+                <maxFileSize>128 MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+        <!--日志输出编码格式化-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+
+        <!--如果只是想要 Error 级别的日志，那么需要过滤一下，默认是 info 级别的，ThresholdFilter-->
+        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+            <!--过滤 Error-->
+            <!--<level>ERROR</level>-->
+            <!--没有匹配到就允许-->
+            <!--<onMatch>ACCEPT</onMatch>-->
+            <!--匹配到就禁止-->
+            <!--<onMismatch>DENY</onMismatch>-->
+        <!--</filter>-->
+    </appender>
+
+    <!-- mapper层debug日志,输出sql日志 -->
+    <logger name="com.invitation.card.mapper" level="DEBUG"/>
+
+
+    <!-- 日志输出级别 -->
+    <!-- logback为java中的包 -->
+    <!-- additivity属性为false，表示此loger的打印信息不再向上级传递;  -->
+    <logger name="com.invitation.card" level="debug" additivity="false">
+        <appender-ref ref="consoleLog"/>
+    </logger>
+    <root level="INFO">
+    <appender-ref ref="fileInfoLog" />
+    </root>
+</configuration>
